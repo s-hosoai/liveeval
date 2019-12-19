@@ -16,10 +16,9 @@ defmodule LiveevalWeb.Router do
 
   scope "/", LiveevalWeb do
     pipe_through :browser
-    live "/live", LivePage
-    # live "/live/:id", LivePage
+    live "/live/:id", LivePage
 
-    # get "/", PageController, :index
+    get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
