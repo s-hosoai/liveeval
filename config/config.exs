@@ -10,10 +10,10 @@ use Mix.Config
 # Configures the endpoint
 config :liveeval, LiveevalWeb.Endpoint,
   url: [host: "localhost"],
+  live_view: [signing_salt: "mWMM9ZOFCNc3DR5syBfsGIvpa/vVe/Va"],
   secret_key_base: "ROLkdX4ijbJsHPLSGzEjyWCYPy8NQQ1PAZd2KNyGW2gbjGuhOoR55EZfuHqoZyLv",
   render_errors: [view: LiveevalWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Liveeval.PubSub, adapter: Phoenix.PubSub.PG2],
-  live_view: [signing_salt: "G8jlSKMjJEhmzXdJLdWZU88K52ao7UFO"]
+  pubsub: [name: Liveeval.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
